@@ -1,0 +1,150 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Baron Guillot 2020",
+      "price": 34.9,
+      "category": 1,
+      "image_url": "https://i.imgur.com/dehBzz8.png"
+    },
+    {
+      "id": 2,
+      "name": "Portada Winemaker's 2019",
+      "price": 69.9,
+      "category": 1,
+      "image_url": "https://i.imgur.com/wFxxgVh.png"
+    },
+    {
+      "id": 3,
+      "name": "Mestre André Rosé",
+      "price": 37.9,
+      "category": 1,
+      "image_url": "https://i.imgur.com/zsn4qzl.png"
+    },
+    {
+      "id": 4,
+      "name": "Los Andes Malbec 2021",
+      "price": 36.9,
+      "category": 1,
+      "image_url": "https://i.imgur.com/CaHaXnq.png"
+    },
+    {
+      "id": 5,
+      "name": "Anciano Gran Reserva 10 years Tempranillo Valdepeñas DOP 2009",
+      "price": 79.9,
+      "category": 1,
+      "image_url": "https://i.imgur.com/vl8Y3lO.png"
+    },
+    {
+      "id": 6,
+      "name": "Vibra! - Spritz",
+      "price": 19.9,
+      "category": 1,
+      "image_url": "https://i.imgur.com/Pwnb3wx.png"
+    },
+    {
+      "id": 7,
+      "name": "Kit Degustação com Tarima",
+      "price": 119.9,
+      "category": 1,
+      "image_url": "https://i.imgur.com/OVSJ0pQ.png"
+    },
+    {
+      "id": 8,
+      "name": "FRIBOI Patinho 1.8kg",
+      "price": 36.9,
+      "category": 2,
+      "image_url": "https://i.imgur.com/wQIziIZ.png"
+    },
+    {
+      "id": 9,
+      "name": "Montana Picanha 1.2kg",
+      "price": 113.28,
+      "category": 2,
+      "image_url": "https://i.imgur.com/3oSJjwA.png"
+    },
+    {
+      "id": 9,
+      "name": "Fazenda Futuro Carne Moída 270g",
+      "price": 12.99,
+      "category": 2,
+      "image_url": "https://i.imgur.com/NgFU0oL.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Frutas Vermelhas Congeladas de Marchi 1.2kg",
+      "price": 43.05,
+      "category": 3,
+      "image_url": "https://i.imgur.com/NumUkIx.png"
+    },
+    {
+      "id": 11,
+      "name": "Geleia de Frutas Vermelhas 180g",
+      "price": 11.99,
+      "category": 3,
+      "image_url": "https://i.imgur.com/EoYRELe.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Veja Lavanda Bem Estar 2L",
+      "price": 11.9,
+      "category": 4,
+      "image_url": "https://i.imgur.com/VzFO9CP.png"
+    },
+    {
+      "id": 13,
+      "name": "Veja Multiuso Original 750ml",
+      "price": 6.5,
+      "category": 4,
+      "image_url": "https://i.imgur.com/JUv04qU.png"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "title": "Vinhos",
+      "image_url": "https://i.imgur.com/7t4uItd.png"
+    },
+    {
+      "id": 2,
+      "title": "Carnes",
+      "image_url": "https://i.imgur.com/4nRTFJc.png"
+    },
+    {
+      "id": 3,
+      "title": "Frutas",
+      "image_url": "https://i.imgur.com/0VkAUkP.png"
+    },
+    {
+      "id": 4,
+      "title": "Produtos de Limpeza",
+      "image_url": "https://i.imgur.com/UynA6SX.png"
+    }
+  ],
+  "favorites": [
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": {
+        "id": 1,
+        "name": "Baron Guillot 2020",
+        "price": 34.9,
+        "category": 1,
+        "image_url": "https://i.imgur.com/dehBzz8.png"
+      }
+    },
+    {
+      "id": 1
+    },
+    {
+      "id": 11
+    },
+    {
+      "id": 2
+    }
+  ]
+}
