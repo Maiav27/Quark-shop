@@ -108,7 +108,7 @@ console.log(quarkShop.favoritos)
        return(
          <div>
 
-          { produtos.filter(produto => produto.name.toLocaleLowerCase().includes(pesquisaProduto.toLocaleLowerCase()) && produto.category == categoria ).map(card) }
+          { produtos.filter(produto => produto.name.toLocaleLowerCase().includes(pesquisaProduto.toLocaleLowerCase()) && categoria.includes(produto.category) ).map(card) }
          </div>
        )
     } else if(pesquisaProduto.trim() != '' && tamanho > 0  && categoria.length == 0){
