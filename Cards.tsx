@@ -94,8 +94,8 @@ console.log(quarkShop.favoritos)
     }
   
     let tamanho
-    if(categoria > 0){
-         tamanho = produtos.filter(produto => produto.name.toLocaleLowerCase().includes(pesquisaProduto.toLocaleLowerCase()) && produto.category == categoria ).length
+    if(categoria.length > 0){
+         tamanho = produtos.filter(produto => produto.name.toLocaleLowerCase().includes(pesquisaProduto.toLocaleLowerCase()) && categoria.includes(produto.category) ).length
     }else{
 
         tamanho = produtos.filter(produto => produto.name.toLocaleLowerCase().includes(pesquisaProduto.toLocaleLowerCase()) ).length
@@ -111,7 +111,7 @@ console.log(quarkShop.favoritos)
           { produtos.filter(produto => produto.name.toLocaleLowerCase().includes(pesquisaProduto.toLocaleLowerCase()) && produto.category == categoria ).map(card) }
          </div>
        )
-    } else if(pesquisaProduto.trim() != '' && tamanho > 0  && categoria == 0){
+    } else if(pesquisaProduto.trim() != '' && tamanho > 0  && categoria.length == 0){
 
         return(
             <div>
@@ -126,13 +126,13 @@ console.log(quarkShop.favoritos)
                <p>Produto não encontrado</p>
            )
     }
-    else if( categoria > 0) {
+    else if( categoria.length > 0) {
      
       return(
 
         <div>
 
-           { produtos.filter(produto =>   produto.category == categoria ).map(card) }
+           { produtos.filter(produto =>   categoria.includes(produto.category) ).map(card) }
         </div>
       )
     }else {

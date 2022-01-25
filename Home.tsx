@@ -25,7 +25,7 @@ export default function Home() {
   const [produtos, setProdutos]  = useState(defaultProdutos)
   const [pesquisaProduto, setPesquisaProduto] = useState('')
   const [categorias, setCategorias] = useState([])
-  const [categoriaId, setCategoriaId] = useState(0)
+  const [categoriaId, setCategoriaId] = useState([])
 
   
   
@@ -45,14 +45,12 @@ export default function Home() {
 
     const clicouCategoria  = (id)=> {
       
-      
-      setCategoriaId(curr => {
-        if(curr == id){
-           return 0
-        } else{
-          return id
-        }
-      })
+      if(categoriaId.includes(id)){
+        setCategoriaId(categoriaId.filter(curr => curr != id))
+      }else{
+           setCategoriaId([...categoriaId, id])
+      }
+     
     }
  
 
@@ -60,7 +58,7 @@ export default function Home() {
     
     const categoriasCard = (categoria) =>{
       return(
-        <Card key={categoria.id} onClick={()=>clicouCategoria(categoria.id)} style={{  borderColor : (categoriaId == categoria.id ? ' pink ' : 'white' ) , width : '110px', display : 'grid', height : '100px', marginLeft : '9px' , marginBottom : '10px', alignContent : 'center', alignItems : 'center', position : 'relative' , float : 'left' } }>
+        <Card key={categoria.id} onClick={()=>clicouCategoria(categoria.id)} style={{  borderColor : (categoriaId.includes(categoria.id)  ? ' pink ' : 'white' ) , width : '110px', display : 'grid', height : '100px', marginLeft : '9px' , marginBottom : '10px', alignContent : 'center', alignItems : 'center', position : 'relative' , float : 'left' } }>
 
          <Card.Body >
 
